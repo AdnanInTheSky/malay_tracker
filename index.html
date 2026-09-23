@@ -4,1355 +4,202 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Expense Balancer</title>
+  <title>Expense Form</title>
 
   <script src="https://cdn.tailwindcss.com"></script>
-  <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
 </head>
 
-<body class="min-h-screen bg-white text-black" x-data="app()" x-init="init()">
+<body class="bg-white text-black min-h-screen">
 
-  <!-- Header -->
-  <header class="border-b border-gray-200">
-    <div class="mx-auto flex max-w-6xl items-center justify-between px-4 py-4">
+  <main class="max-w-lg mx-auto px-5 py-10">
 
+    <div class="mb-8">
+      <h1 class="text-3xl font-bold">
+        Add Expense
+      </h1>
+
+      <p class="text-gray-500 mt-2">
+        Record a group payment.
+      </p>
+    </div>
+
+
+    <form
+      id="expenseForm"
+      class="space-y-5"
+    >
+
+      <!-- Date -->
+      <div>
+        <label class="block text-sm font-medium mb-2">
+          Date
+        </label>
+
+        <input
+          type="date"
+          name="date"
+          required
+          class="w-full border border-black px-4 py-3 outline-none"
+        >
+      </div>
+
+
+      <!-- Description -->
+      <div>
+        <label class="block text-sm font-medium mb-2">
+          Description
+        </label>
+
+        <input
+          type="text"
+          name="description"
+          placeholder="Dinner, transport, tickets..."
+          required
+          class="w-full border border-black px-4 py-3 outline-none"
+        >
+      </div>
+
+
+      <!-- Paid By -->
+      <div>
+        <label class="block text-sm font-medium mb-2">
+          Paid By
+        </label>
+
+        <select
+          name="paidBy"
+          required
+          class="w-full border border-black px-4 py-3 bg-white outline-none"
+        >
+          <option value="">Select person</option>
+          <option value="Adnan">Adnan</option>
+          <option value="Luban">Luban</option>
+          <option value="Saad">Saad</option>
+          <option value="Atiq">Atiq</option>
+        </select>
+      </div>
+
+
+      <!-- Amount -->
+      <div>
+        <label class="block text-sm font-medium mb-2">
+          Amount
+        </label>
+
+        <input
+          type="number"
+          name="amount"
+          placeholder="0"
+          min="0"
+          step="0.01"
+          required
+          class="w-full border border-black px-4 py-3 outline-none"
+        >
+      </div>
+
+
+      <!-- Submit -->
       <button
-        @click="page = 'dashboard'"
-        class="font-semibold tracking-tight"
+        type="submit"
+        id="submitButton"
+        class="w-full bg-black text-white py-3 hover:bg-gray-800"
       >
-        Expense Balancer
+        Add Expense
       </button>
 
-      <nav class="flex gap-4 text-sm">
-        <button
-          @click="page = 'dashboard'"
-          :class="page === 'dashboard' ? 'font-semibold' : 'text-gray-500'"
-        >
-          Dashboard
-        </button>
+    </form>
 
-        <button
-          @click="page = 'expenses'"
-          :class="page === 'expenses' ? 'font-semibold' : 'text-gray-500'"
-        >
-          Expenses
-        </button>
-
-        <button
-          @click="page = 'settlement'"
-          :class="page === 'settlement' ? 'font-semibold' : 'text-gray-500'"
-        >
-          Settlement
-        </button>
-
-        <button
-          @click="page = 'settings'"
-          :class="page === 'settings' ? 'font-semibold' : 'text-gray-500'"
-        >
-          Settings
-        </button>
-      </nav>
-
-    </div>
-  </header>
-
-  <main class="mx-auto max-w-6xl px-4 py-6">
 
     <!-- Status -->
     <div
-      x-show="loading"
-      class="mb-4 border border-gray-200 p-3 text-sm"
-    >
-      Loading...
-    </div>
-
-    <div
-      x-show="error"
-      x-text="error"
-      class="mb-4 border border-black p-3 text-sm"
+      id="status"
+      class="hidden mt-5 border border-black p-4 text-sm"
     ></div>
-
-    <div
-      x-show="message"
-      x-text="message"
-      class="mb-4 border border-gray-200 p-3 text-sm"
-    ></div>
-
-
-    <!-- =========================================================
-         DASHBOARD
-    ========================================================== -->
-
-    <section x-show="page === 'dashboard'" class="space-y-6">
-
-      <div>
-        <h1 class="text-2xl font-semibold">Dashboard</h1>
-
-        <p class="mt-1 text-sm text-gray-500">
-          Select an event to view its current balance.
-        </p>
-      </div>
-
-
-      <!-- Event -->
-      <div class="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
-
-        <div>
-          <label class="mb-1 block text-xs text-gray-500">
-            Event
-          </label>
-
-          <select
-            x-model="selectedEventId"
-            @change="refreshEvent()"
-            class="w-full border border-gray-300 bg-white px-3 py-2"
-          >
-            <option value="">Select event</option>
-
-            <template x-for="event in events" :key="event.id">
-              <option
-                :value="event.id"
-                x-text="event.name"
-              ></option>
-            </template>
-          </select>
-        </div>
-
-
-        <div class="border border-gray-200 p-3">
-          <div class="text-xs text-gray-500">
-            Date
-          </div>
-
-          <div
-            class="mt-1 font-medium"
-            x-text="dashboard.date || '—'"
-          ></div>
-        </div>
-
-
-        <div class="border border-gray-200 p-3">
-          <div class="text-xs text-gray-500">
-            Total spent
-          </div>
-
-          <div
-            class="mt-1 font-medium"
-            x-text="money(dashboard.total)"
-          ></div>
-        </div>
-
-
-        <div class="border border-gray-200 p-3">
-          <div class="text-xs text-gray-500">
-            Equal share
-          </div>
-
-          <div
-            class="mt-1 font-medium"
-            x-text="money(dashboard.share)"
-          ></div>
-        </div>
-
-      </div>
-
-
-      <!-- Statistics -->
-      <div class="grid gap-3 sm:grid-cols-3">
-
-        <div class="border border-gray-200 p-4">
-          <div class="text-xs text-gray-500">
-            Expenses
-          </div>
-
-          <div
-            class="mt-1 text-xl"
-            x-text="dashboard.expenseCount"
-          ></div>
-        </div>
-
-
-        <div class="border border-gray-200 p-4">
-          <div class="text-xs text-gray-500">
-            Members
-          </div>
-
-          <div
-            class="mt-1 text-xl"
-            x-text="dashboard.memberCount"
-          ></div>
-        </div>
-
-
-        <div class="border border-gray-200 p-4">
-          <div class="text-xs text-gray-500">
-            Settlement
-          </div>
-
-          <div
-            class="mt-1 text-xl"
-            x-text="dashboard.settlementStatus || '—'"
-          ></div>
-        </div>
-
-      </div>
-
-
-      <!-- Balances -->
-      <div>
-
-        <h2 class="mb-3 text-lg font-semibold">
-          Balances
-        </h2>
-
-        <div class="overflow-x-auto border border-gray-200">
-
-          <table class="w-full text-sm">
-
-            <thead class="border-b border-gray-200 text-left">
-              <tr>
-                <th class="p-3">Member</th>
-                <th class="p-3">Paid</th>
-                <th class="p-3">Balance</th>
-                <th class="p-3">Status</th>
-              </tr>
-            </thead>
-
-            <tbody>
-
-              <template
-                x-for="row in dashboard.balances"
-                :key="row.memberId"
-              >
-
-                <tr class="border-b border-gray-100">
-
-                  <td
-                    class="p-3"
-                    x-text="row.name"
-                  ></td>
-
-                  <td
-                    class="p-3"
-                    x-text="money(row.paid)"
-                  ></td>
-
-                  <td
-                    class="p-3 font-medium"
-                    x-text="money(row.balance, true)"
-                  ></td>
-
-                  <td
-                    class="p-3"
-                    x-text="
-                      row.balance > 0.005
-                        ? 'To receive'
-                        : row.balance < -0.005
-                          ? 'To pay'
-                          : 'Settled'
-                    "
-                  ></td>
-
-                </tr>
-
-              </template>
-
-
-              <tr x-show="!dashboard.balances.length">
-                <td
-                  colspan="4"
-                  class="p-4 text-gray-500"
-                >
-                  No event selected.
-                </td>
-              </tr>
-
-            </tbody>
-
-          </table>
-
-        </div>
-
-      </div>
-
-    </section>
-
-
-
-    <!-- =========================================================
-         EXPENSES
-    ========================================================== -->
-
-    <section x-show="page === 'expenses'" class="space-y-6">
-
-      <div>
-        <h1 class="text-2xl font-semibold">
-          Expenses
-        </h1>
-
-        <p class="mt-1 text-sm text-gray-500">
-          Add and manage expenses stored in Google Sheets.
-        </p>
-      </div>
-
-
-      <!-- Add Expense -->
-      <form
-        @submit.prevent="addExpense()"
-        class="grid gap-3 border border-gray-200 p-4 sm:grid-cols-2 lg:grid-cols-4"
-      >
-
-        <select
-          x-model="expenseForm.eventId"
-          required
-          class="border border-gray-300 bg-white px-3 py-2"
-        >
-          <option value="">Event</option>
-
-          <template x-for="event in events" :key="event.id">
-            <option
-              :value="event.id"
-              x-text="event.name"
-            ></option>
-          </template>
-        </select>
-
-
-        <input
-          x-model="expenseForm.date"
-          type="date"
-          required
-          class="border border-gray-300 px-3 py-2"
-        >
-
-
-        <input
-          x-model="expenseForm.description"
-          required
-          placeholder="Description"
-          class="border border-gray-300 px-3 py-2"
-        >
-
-
-        <select
-          x-model="expenseForm.categoryId"
-          required
-          class="border border-gray-300 bg-white px-3 py-2"
-        >
-          <option value="">Category</option>
-
-          <template x-for="category in categories" :key="category.id">
-            <option
-              :value="category.id"
-              x-text="category.name"
-            ></option>
-          </template>
-        </select>
-
-
-        <input
-          x-model="expenseForm.amount"
-          type="number"
-          min="0.01"
-          step="0.01"
-          required
-          placeholder="Amount"
-          class="border border-gray-300 px-3 py-2"
-        >
-
-
-        <select
-          x-model="expenseForm.paidBy"
-          required
-          class="border border-gray-300 bg-white px-3 py-2"
-        >
-          <option value="">Paid by</option>
-
-          <template x-for="member in members" :key="member.id">
-            <option
-              :value="member.id"
-              x-text="member.name"
-            ></option>
-          </template>
-        </select>
-
-
-        <input
-          x-model="expenseForm.note"
-          placeholder="Note"
-          class="border border-gray-300 px-3 py-2"
-        >
-
-
-        <button
-          class="bg-black px-4 py-2 text-white"
-        >
-          Add Expense
-        </button>
-
-      </form>
-
-
-      <!-- Filters -->
-      <div class="grid gap-3 sm:grid-cols-4">
-
-        <select
-          x-model="filters.eventId"
-          @change="loadExpenses()"
-          class="border border-gray-300 bg-white px-3 py-2"
-        >
-          <option value="">All events</option>
-
-          <template x-for="event in events" :key="event.id">
-            <option
-              :value="event.id"
-              x-text="event.name"
-            ></option>
-          </template>
-        </select>
-
-
-        <input
-          x-model="filters.date"
-          @change="loadExpenses()"
-          type="date"
-          class="border border-gray-300 px-3 py-2"
-        >
-
-
-        <select
-          x-model="filters.memberId"
-          @change="loadExpenses()"
-          class="border border-gray-300 bg-white px-3 py-2"
-        >
-          <option value="">All members</option>
-
-          <template x-for="member in members" :key="member.id">
-            <option
-              :value="member.id"
-              x-text="member.name"
-            ></option>
-          </template>
-        </select>
-
-
-        <select
-          x-model="filters.categoryId"
-          @change="loadExpenses()"
-          class="border border-gray-300 bg-white px-3 py-2"
-        >
-          <option value="">All categories</option>
-
-          <template x-for="category in categories" :key="category.id">
-            <option
-              :value="category.id"
-              x-text="category.name"
-            ></option>
-          </template>
-        </select>
-
-      </div>
-
-
-      <!-- Expense Table -->
-      <div class="overflow-x-auto border border-gray-200">
-
-        <table class="w-full text-sm">
-
-          <thead class="border-b border-gray-200 text-left">
-
-            <tr>
-              <th class="p-3">Date</th>
-              <th class="p-3">Description</th>
-              <th class="p-3">Category</th>
-              <th class="p-3">Paid by</th>
-              <th class="p-3">Amount</th>
-              <th class="p-3"></th>
-            </tr>
-
-          </thead>
-
-          <tbody>
-
-            <template
-              x-for="expense in expenses"
-              :key="expense.id"
-            >
-
-              <tr class="border-b border-gray-100">
-
-                <td
-                  class="p-3"
-                  x-text="expense.date"
-                ></td>
-
-                <td
-                  class="p-3"
-                  x-text="expense.description"
-                ></td>
-
-                <td
-                  class="p-3"
-                  x-text="expense.categoryName"
-                ></td>
-
-                <td
-                  class="p-3"
-                  x-text="expense.paidByName"
-                ></td>
-
-                <td
-                  class="p-3"
-                  x-text="money(expense.amount)"
-                ></td>
-
-                <td class="p-3 text-right">
-
-                  <button
-                    @click="deleteExpense(expense.id)"
-                    class="text-sm underline"
-                  >
-                    Delete
-                  </button>
-
-                </td>
-
-              </tr>
-
-            </template>
-
-
-            <tr x-show="!expenses.length">
-              <td
-                colspan="6"
-                class="p-4 text-gray-500"
-              >
-                No expenses found.
-              </td>
-            </tr>
-
-          </tbody>
-
-        </table>
-
-      </div>
-
-    </section>
-
-
-
-    <!-- =========================================================
-         SETTLEMENT
-    ========================================================== -->
-
-    <section x-show="page === 'settlement'" class="space-y-6">
-
-      <div>
-
-        <h1 class="text-2xl font-semibold">
-          Settlement
-        </h1>
-
-        <p class="mt-1 text-sm text-gray-500">
-          Generate a minimal set of payments for the selected event.
-        </p>
-
-      </div>
-
-
-      <div class="flex flex-wrap gap-2">
-
-        <select
-          x-model="selectedEventId"
-          @change="refreshEvent()"
-          class="border border-gray-300 bg-white px-3 py-2"
-        >
-
-          <option value="">
-            Select event
-          </option>
-
-          <template x-for="event in events" :key="event.id">
-
-            <option
-              :value="event.id"
-              x-text="event.name"
-            ></option>
-
-          </template>
-
-        </select>
-
-
-        <button
-          @click="generateSettlement()"
-          :disabled="!selectedEventId"
-          class="bg-black px-4 py-2 text-white disabled:opacity-40"
-        >
-          Generate settlement
-        </button>
-
-      </div>
-
-
-      <div class="border border-gray-200 p-4">
-
-        <div class="mb-4 flex justify-between">
-
-          <span>
-            Total
-          </span>
-
-          <strong
-            x-text="money(dashboard.total)"
-          ></strong>
-
-        </div>
-
-
-        <div class="space-y-2">
-
-          <template
-            x-for="item in settlement"
-            :key="item.id"
-          >
-
-            <div
-              class="flex flex-col gap-2 border-b border-gray-100 py-3 sm:flex-row sm:items-center sm:justify-between"
-            >
-
-              <div>
-                <span x-text="item.fromName"></span>
-                →
-                <span x-text="item.toName"></span>
-              </div>
-
-
-              <div class="flex items-center gap-3">
-
-                <strong
-                  x-text="money(item.amount)"
-                ></strong>
-
-
-                <button
-                  x-show="item.status !== 'Completed'"
-                  @click="completeSettlement(item.id)"
-                  class="border border-black px-3 py-1 text-xs"
-                >
-                  Mark completed
-                </button>
-
-
-                <span
-                  x-show="item.status === 'Completed'"
-                  class="text-xs"
-                >
-                  Completed
-                </span>
-
-              </div>
-
-            </div>
-
-          </template>
-
-
-          <div
-            x-show="!settlement.length"
-            class="text-sm text-gray-500"
-          >
-            No settlement records for this event.
-          </div>
-
-        </div>
-
-      </div>
-
-    </section>
-
-
-
-    <!-- =========================================================
-         SETTINGS
-    ========================================================== -->
-
-    <section x-show="page === 'settings'" class="space-y-8">
-
-      <div>
-
-        <h1 class="text-2xl font-semibold">
-          Settings
-        </h1>
-
-        <p class="mt-1 text-sm text-gray-500">
-          Manage reference data stored in Google Sheets.
-        </p>
-
-      </div>
-
-
-      <div class="grid gap-8 lg:grid-cols-3">
-
-
-        <!-- Members -->
-
-        <div class="border border-gray-200 p-4">
-
-          <h2 class="mb-3 font-semibold">
-            Members
-          </h2>
-
-
-          <form
-            @submit.prevent="addSetting('addMember', memberForm)"
-            class="mb-4 flex gap-2"
-          >
-
-            <input
-              x-model="memberForm.name"
-              required
-              placeholder="Name"
-              class="min-w-0 flex-1 border border-gray-300 px-3 py-2"
-            >
-
-            <button
-              class="bg-black px-3 py-2 text-white"
-            >
-              Add
-            </button>
-
-          </form>
-
-
-          <div class="space-y-2">
-
-            <template
-              x-for="member in members"
-              :key="member.id"
-            >
-
-              <div
-                class="flex justify-between border-b border-gray-100 py-2"
-              >
-
-                <span x-text="member.name"></span>
-
-                <button
-                  @click="toggleSetting('toggleMember', member.id, member.active)"
-                  class="text-xs underline"
-                  x-text="member.active ? 'Disable' : 'Enable'"
-                ></button>
-
-              </div>
-
-            </template>
-
-          </div>
-
-        </div>
-
-
-
-        <!-- Categories -->
-
-        <div class="border border-gray-200 p-4">
-
-          <h2 class="mb-3 font-semibold">
-            Categories
-          </h2>
-
-
-          <form
-            @submit.prevent="addSetting('addCategory', categoryForm)"
-            class="mb-4 flex gap-2"
-          >
-
-            <input
-              x-model="categoryForm.name"
-              required
-              placeholder="Category"
-              class="min-w-0 flex-1 border border-gray-300 px-3 py-2"
-            >
-
-            <button
-              class="bg-black px-3 py-2 text-white"
-            >
-              Add
-            </button>
-
-          </form>
-
-
-          <div class="space-y-2">
-
-            <template
-              x-for="category in categories"
-              :key="category.id"
-            >
-
-              <div
-                class="flex justify-between border-b border-gray-100 py-2"
-              >
-
-                <span x-text="category.name"></span>
-
-                <button
-                  @click="toggleSetting('toggleCategory', category.id, category.active)"
-                  class="text-xs underline"
-                  x-text="category.active ? 'Disable' : 'Enable'"
-                ></button>
-
-              </div>
-
-            </template>
-
-          </div>
-
-        </div>
-
-
-
-        <!-- Events -->
-
-        <div class="border border-gray-200 p-4">
-
-          <h2 class="mb-3 font-semibold">
-            Events
-          </h2>
-
-
-          <form
-            @submit.prevent="addSetting('addEvent', eventForm)"
-            class="mb-4 space-y-2"
-          >
-
-            <input
-              x-model="eventForm.name"
-              required
-              placeholder="Event name"
-              class="w-full border border-gray-300 px-3 py-2"
-            >
-
-            <input
-              x-model="eventForm.date"
-              required
-              type="date"
-              class="w-full border border-gray-300 px-3 py-2"
-            >
-
-            <button
-              class="w-full bg-black px-3 py-2 text-white"
-            >
-              Create event
-            </button>
-
-          </form>
-
-
-          <div class="space-y-2">
-
-            <template
-              x-for="event in events"
-              :key="event.id"
-            >
-
-              <div class="border-b border-gray-100 py-2">
-
-                <div x-text="event.name"></div>
-
-                <div
-                  class="text-xs text-gray-500"
-                  x-text="event.date"
-                ></div>
-
-              </div>
-
-            </template>
-
-          </div>
-
-        </div>
-
-      </div>
-
-    </section>
 
   </main>
 
 
-
 <script>
 
-const API_URL = "https://script.google.com/macros/s/AKfycbxCMZNflq_IF0npeW7yIIGH6d-qW7LpZOiMhC0B8v7vx8iPb_pgdXcL6gi67lGoWZs/exec";
+const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbzO440OujMbSF4SirnNiJNbm28G4wPA03HBEe7OYbHfTseVVweDtonBdra091s_r9qi/exec";
 
+const form = document.getElementById("expenseForm");
+const button = document.getElementById("submitButton");
+const status = document.getElementById("status");
 
-function app() {
 
-  return {
+form.addEventListener("submit", async function (event) {
 
-    page: "dashboard",
+  event.preventDefault();
 
-    loading: false,
+  button.disabled = true;
+  button.textContent = "Submitting...";
 
-    error: "",
+  status.classList.add("hidden");
 
-    message: "",
 
+  const formData = new FormData(form);
 
-    members: [],
+  const data = {
 
-    events: [],
+    date: formData.get("date"),
 
-    categories: [],
+    description: formData.get("description"),
 
-    expenses: [],
+    paidBy: formData.get("paidBy"),
 
-    settlement: [],
-
-
-    selectedEventId: "",
-
-
-    dashboard: {
-      date: "",
-      total: 0,
-      share: 0,
-      expenseCount: 0,
-      memberCount: 0,
-      settlementStatus: "",
-      balances: []
-    },
-
-
-    filters: {
-      eventId: "",
-      date: "",
-      memberId: "",
-      categoryId: ""
-    },
-
-
-    expenseForm: {
-      eventId: "",
-      date: new Date().toISOString().slice(0, 10),
-      description: "",
-      categoryId: "",
-      amount: "",
-      paidBy: "",
-      note: ""
-    },
-
-
-    memberForm: {
-      name: ""
-    },
-
-
-    categoryForm: {
-      name: ""
-    },
-
-
-    eventForm: {
-      name: "",
-      date: new Date().toISOString().slice(0, 10)
-    },
-
-
-    async init() {
-
-      if (API_URL === "YOUR_APPS_SCRIPT_WEB_APP_URL") {
-
-        this.error =
-          "Set API_URL in index.html to your deployed Apps Script Web App URL.";
-
-        return;
-      }
-
-
-      await this.loadReferenceData();
-
-
-      if (this.events.length) {
-
-        this.selectedEventId = this.events[0].id;
-
-        this.expenseForm.eventId = this.events[0].id;
-
-        await this.refreshEvent();
-
-      }
-
-    },
-
-
-    async api(action, method = "GET", data = null, params = {}) {
-
-      this.loading = true;
-
-      this.error = "";
-
-      this.message = "";
-
-
-      try {
-
-        let url =
-          API_URL +
-          "?action=" +
-          encodeURIComponent(action);
-
-
-        Object.entries(params).forEach(([key, value]) => {
-
-          if (value !== "" && value != null) {
-
-            url +=
-              "&" +
-              encodeURIComponent(key) +
-              "=" +
-              encodeURIComponent(value);
-
-          }
-
-        });
-
-
-        const options = {
-          method
-        };
-
-
-        if (method === "POST") {
-
-          options.headers = {
-            "Content-Type": "text/plain;charset=utf-8"
-          };
-
-
-          options.body = JSON.stringify({
-            action,
-            ...data
-          });
-
-        }
-
-
-        const response = await fetch(url, options);
-
-
-        const json = await response.json();
-
-
-        if (!json.success) {
-
-          throw new Error(
-            json.error || "Request failed"
-          );
-
-        }
-
-
-        return json.data;
-
-      } catch (error) {
-
-        this.error = error.message;
-
-        throw error;
-
-      } finally {
-
-        this.loading = false;
-
-      }
-
-    },
-
-
-    async loadReferenceData() {
-
-      try {
-
-        [
-          this.members,
-          this.events,
-          this.categories
-        ] = await Promise.all([
-
-          this.api("getMembers"),
-
-          this.api("getEvents"),
-
-          this.api("getCategories")
-
-        ]);
-
-      } catch {}
-
-    },
-
-
-    async loadExpenses() {
-
-      try {
-
-        this.expenses = await this.api(
-          "getExpenses",
-          "GET",
-          null,
-          {
-            eventId: this.filters.eventId,
-            date: this.filters.date,
-            memberId: this.filters.memberId,
-            categoryId: this.filters.categoryId
-          }
-        );
-
-      } catch {}
-
-    },
-
-
-    async refreshEvent() {
-
-      if (!this.selectedEventId) return;
-
-
-      this.expenseForm.eventId =
-        this.selectedEventId;
-
-
-      this.filters.eventId =
-        this.selectedEventId;
-
-
-      try {
-
-        this.dashboard =
-          await this.api(
-            "getDashboard",
-            "GET",
-            null,
-            {
-              eventId: this.selectedEventId
-            }
-          );
-
-
-        this.expenses =
-          await this.api(
-            "getExpenses",
-            "GET",
-            null,
-            {
-              eventId: this.selectedEventId
-            }
-          );
-
-
-        this.settlement =
-          await this.api(
-            "getSettlements",
-            "GET",
-            null,
-            {
-              eventId: this.selectedEventId
-            }
-          );
-
-      } catch {}
-
-    },
-
-
-    async addExpense() {
-
-      try {
-
-        await this.api(
-          "addExpense",
-          "POST",
-          this.expenseForm
-        );
-
-
-        this.message = "Expense added.";
-
-
-        this.expenseForm.description = "";
-
-        this.expenseForm.amount = "";
-
-        this.expenseForm.note = "";
-
-
-        await this.refreshEvent();
-
-      } catch {}
-
-    },
-
-
-    async deleteExpense(id) {
-
-      if (!confirm("Delete this expense?")) {
-        return;
-      }
-
-
-      try {
-
-        await this.api(
-          "deleteExpense",
-          "POST",
-          { id }
-        );
-
-
-        this.message = "Expense deleted.";
-
-
-        await this.refreshEvent();
-
-      } catch {}
-
-    },
-
-
-    async generateSettlement() {
-
-      try {
-
-        this.settlement =
-          await this.api(
-            "generateSettlement",
-            "POST",
-            {
-              eventId: this.selectedEventId
-            }
-          );
-
-
-        this.message =
-          "Settlement generated.";
-
-
-        await this.refreshEvent();
-
-      } catch {}
-
-    },
-
-
-    async completeSettlement(id) {
-
-      try {
-
-        await this.api(
-          "completeSettlement",
-          "POST",
-          { id }
-        );
-
-
-        this.message =
-          "Settlement marked completed.";
-
-
-        await this.refreshEvent();
-
-      } catch {}
-
-    },
-
-
-    async addSetting(action, data) {
-
-      try {
-
-        await this.api(
-          action,
-          "POST",
-          data
-        );
-
-
-        this.message = "Saved.";
-
-
-        this.memberForm.name = "";
-
-        this.categoryForm.name = "";
-
-        this.eventForm.name = "";
-
-
-        await this.loadReferenceData();
-
-
-        if (this.selectedEventId) {
-
-          await this.refreshEvent();
-
-        }
-
-      } catch {}
-
-    },
-
-
-    async toggleSetting(action, id, active) {
-
-      try {
-
-        await this.api(
-          action,
-          "POST",
-          {
-            id,
-            active: !active
-          }
-        );
-
-
-        await this.loadReferenceData();
-
-      } catch {}
-
-    },
-
-
-    money(value, signed = false) {
-
-      const number =
-        Number(value || 0);
-
-
-      return (
-
-        signed && number > 0
-          ? "+"
-          : ""
-
-      ) +
-
-        "৳" +
-
-        number.toLocaleString(
-          "en-BD",
-          {
-            minimumFractionDigits: 2,
-            maximumFractionDigits: 2
-          }
-        );
-
-    }
+    amount: formData.get("amount")
 
   };
 
-}
+
+  try {
+
+    await fetch(SCRIPT_URL, {
+
+      method: "POST",
+
+      mode: "no-cors",
+
+      headers: {
+        "Content-Type": "text/plain"
+      },
+
+      body: JSON.stringify(data)
+
+    });
+
+
+    status.textContent = "Expense added successfully.";
+    status.classList.remove("hidden");
+
+
+    form.reset();
+
+    // Set today's date again
+    form.querySelector('[name="date"]').value =
+      new Date().toISOString().split("T")[0];
+
+
+  } catch (error) {
+
+    status.textContent =
+      "Something went wrong. Please try again.";
+
+    status.classList.remove("hidden");
+
+  }
+
+
+  button.disabled = false;
+  button.textContent = "Add Expense";
+
+});
+
+
+// Set today's date automatically
+form.querySelector('[name="date"]').value =
+  new Date().toISOString().split("T")[0];
 
 </script>
 

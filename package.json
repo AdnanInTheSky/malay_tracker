@@ -1,0 +1,26 @@
+{
+  "name": "ip3-consulting",
+  "version": "1.0.0",
+  "description": "IP3 Consulting website with markdown content management and JSON build system",
+  "scripts": {
+    "build": "node build/build-all.js",
+    "build:hero": "node build/build-hero.js",
+    "build:mandates": "node build/build-mandates.js",
+    "build:capabilities": "node build/build-capabilities.js",
+    "build:why-ip3": "node build/build-why-ip3.js",
+    "build:sectors": "node build/build-sectors.js",
+    "build:translation": "node build/build-translation.js",
+    "build:engagements": "node build/build-engagements.js",
+    "build:research": "node build/build-research.js",
+    "build:evidence": "node build/build-evidence.js",
+    "build:convening": "node build/build-convening.js",
+    "build:clients": "node build/build-clients.js",
+    "build:endorsements": "node build/build-endorsements.js",
+    "build:deck": "node build/build-deck.js",
+    "build:publications": "node build/build-publications.js",
+    "build:leadership": "node build/build-leadership.js",
+    "build:contact": "node build/build-contact.js",
+    "build:faq": "node build/build-faq.js",
+    "build:organization": "node build/build-organization.js"
+  }
+}

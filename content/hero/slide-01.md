@@ -1,0 +1,6 @@
+---
+type: "image"
+src: "https://images.unsplash.com/photo-1552664730-d307ca884978?w=1920&h=1080&fit=crop"
+alt: "Team collaboration"
+order: 1
+---

@@ -1,6 +1,15 @@
 ---
-title: "Diagnostics & Research"
-type: "node"
 order: 1
+type: node
+title: Diagnostics & Research
 ---
-Understanding the problem, the system, and the realistic options.
+**Deliverables**
+
+- Diagnostics
+- Modeling
+- Political-economy analysis
+- Regulatory reviews
+- Sector strategies
+- Fiscal and cost-benefit analysis
+- Reform road maps
+

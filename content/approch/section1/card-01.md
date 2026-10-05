@@ -1,4 +1,4 @@
-﻿---
+---
 order: 1
-text: "Policy"
+text: "LEARN ABOUT"
 ---

@@ -1,6 +1,6 @@
-﻿---
+---
 order: 4
 type: "diff"
-title: "Iterative Process"
-text: "Adapting as we learn, not rigidly following plans."
+title: "Cost, Benefit & Risk"
+text: "No major investment without understanding cost, benefits and risk."
 ---

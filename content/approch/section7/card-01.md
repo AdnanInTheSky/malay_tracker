@@ -1,5 +1,5 @@
-﻿---
+---
 order: 1
-title: "Systems Thinking"
-text: "Understanding complex interconnections and feedback loops within organizational ecosystems."
+title: "Actionable Architecture"
+text: "Turn complexity and evidence into clarity that can be implemented."
 ---

@@ -1,8 +1,8 @@
 ---
-subtitle: "Policy to Implementation"
-title: "Bridging the Gap Between Policy and Practice"
-paragraph: "We transform policy intentions into operational reality through a structured, people-centered approach that ensures every initiative delivers measurable impact."
-buttonText: "Learn More"
+subtitle: "ABOUT US · OUR APPROACH · POLICY TO IMPLEMENTATION"
+title: "Reform is a movement, not a moment."
+paragraph: "Complex challenges rarely fail for want of another recommendation. They fail when evidence is disconnected from decisions, strategy from financing, technology from users, and reform from the institutions that must own it."
+buttonText: "START A CONVERSATION WITH IP3"
 backgroundImage: "https://images.unsplash.com/photo-1497366216548-37526070297c?w=1920&h=1080&fit=crop"
 backgroundVideo: ""
 ---

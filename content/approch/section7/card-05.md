@@ -1,5 +1,5 @@
-﻿---
+---
 order: 5
-title: "Change Management"
-text: "Structured approaches to transitioning individuals and organizations to desired future states."
+title: "Dynamic Network Model"
+text: "Assemble interdisciplinary teams around specific challenges, scaling capacity to the work and contracting it back when the work is done."
 ---

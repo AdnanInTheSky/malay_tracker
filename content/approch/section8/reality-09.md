@@ -1,6 +1,6 @@
-﻿---
+---
 order: 9
 type: "reality"
-title: "Continuous Improvement"
-text: "Establishing mechanisms for ongoing refinement and adaptation."
+title: "A M&E/L&A"
+text: "A monitoring, evaluation and learning framework with decision triggers."
 ---

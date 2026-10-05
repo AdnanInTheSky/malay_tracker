@@ -1,6 +1,6 @@
-﻿---
+---
 order: 8
 type: "diff"
-title: "Measurable Impact"
-text: "Clear KPIs and outcome tracking."
+title: "Actionable Architecture"
+text: "This is the difference between producing analysis and building actionable architecture."
 ---

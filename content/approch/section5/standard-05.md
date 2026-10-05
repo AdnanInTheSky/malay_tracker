@@ -1,11 +1,11 @@
-﻿---
+---
 order: 5
-title: "Sustainable"
-text: "Building capabilities and systems that endure beyond the initial engagement period."
-image: "https://images.unsplash.com/photo-1557804506-669a67965ba0?w=600&h=400&fit=crop"
+title: "Implementation Alongside Strategy"
+text: "Policy, research, finance, digital design, and delivery are not separate phases. They are one continuous process. We design with the end in mind, and stay with the client through implementation and adaptation."
+image: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=600&h=400&fit=crop"
 bullets:
-  - "Capability building"
-  - "Knowledge transfer"
-  - "Long-term planning"
-paragraph: "Transformation that lasts."
+  - "Continuous process across policy, finance, digital, and delivery"
+  - "Design with the end in mind"
+  - "Stay with clients through implementation and adaptation"
+paragraph: "Policy, research, finance, digital design, and delivery are not separate phases. They are one continuous process. We design with the end in mind, and stay with the client through implementation and adaptation."
 ---

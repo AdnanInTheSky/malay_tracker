@@ -1,6 +1,6 @@
-﻿---
+---
 order: 3
 type: "diff"
-title: "Evidence-Based"
-text: "Every recommendation backed by data and research."
+title: "Implementation Question"
+text: "No policy recommendation without an implementation question."
 ---

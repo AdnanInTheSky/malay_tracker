@@ -1,5 +1,5 @@
-﻿---
+---
 order: 2
-title: "Where do we want to be?"
-text: "Defining clear, measurable outcomes that align with organizational goals and stakeholder needs."
+title: "02  Where do you need to be?"
+text: "What would a credible target state look like for users, decision-makers, institutions, finance and accountability?"
 ---

@@ -1,6 +1,6 @@
-﻿---
+---
 order: 4
 type: "reality"
-title: "System Integration"
-text: "Embedding new practices into existing organizational structures."
+title: "An implementation roadmap"
+text: "Sequenced actions, responsibilities, resources and dependencies with decision gates."
 ---

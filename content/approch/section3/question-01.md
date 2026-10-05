@@ -1,5 +1,5 @@
-﻿---
+---
 order: 1
-title: "Where are we now?"
-text: "Understanding the current operational landscape and identifying key pain points across all stakeholders."
+title: "01  Where are you now?"
+text: "What is actually happening across policy, institutions, people, processes, finance, systems, data, technology and service delivery?"
 ---

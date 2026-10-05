@@ -1,6 +1,6 @@
-﻿---
+---
 order: 5
 shortLabel: "05"
 label: "Test"
-description: "Collect structured feedback and evidence."
+description: "Gather evidence, feedback and evidence."
 ---

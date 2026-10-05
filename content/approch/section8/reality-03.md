@@ -1,6 +1,6 @@
-﻿---
+---
 order: 3
 type: "reality"
-title: "Capability Transfer"
-text: "Building internal expertise so teams can operate independently."
+title: "A tested solution"
+text: "A prototype, pilot, policy or model that has been validated with users and institutions."
 ---

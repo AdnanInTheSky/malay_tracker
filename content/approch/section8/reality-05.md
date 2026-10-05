@@ -1,6 +1,6 @@
-﻿---
+---
 order: 5
 type: "reality"
-title: "Performance Monitoring"
-text: "Tracking outcomes and adjusting approaches based on real data."
+title: "A business & governance case"
+text: "Costs, benefits, financing options, risks, institutional and governance arrangements."
 ---

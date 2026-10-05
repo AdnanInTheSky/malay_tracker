@@ -1,11 +1,11 @@
-﻿---
+---
 order: 4
-title: "Transparent"
-text: "Open communication and clear documentation throughout every stage of the process."
-image: "https://images.unsplash.com/photo-1552664730-d307ca884978?w=600&h=400&fit=crop"
+title: "Test Before Scale"
+text: "Designing at scale is designing blind. We prototype, test, and iterate. The pathway is built on evidence, not assumption. What works in pilot informs what works at scale."
+image: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=600&h=400&fit=crop"
 bullets:
-  - "Progress reporting"
-  - "Stakeholder updates"
-  - "Open documentation"
-paragraph: "No surprises, full visibility."
+  - "Avoid designing at scale blindly"
+  - "Prototype, test, and iterate"
+  - "Pilot evidence informs scaled execution"
+paragraph: "Designing at scale is designing blind. We prototype, test, and iterate. The pathway is built on evidence, not assumption. What works in pilot informs what works at scale."
 ---

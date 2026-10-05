@@ -1,11 +1,11 @@
-﻿---
+---
 order: 6
-title: "Measurable"
-text: "Clear KPIs and outcomes tracking to demonstrate impact and return on investment."
-image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop"
+title: "Capability Beyond the Engagement"
+text: "Our job is to make ourselves unnecessary. The ultimate measure of success is not the report we deliver, but the capability we leave behind. We build institutional capacity so clients can sustain change after the engagement."
+image: "https://images.unsplash.com/photo-1557804506-669a67965ba0?w=600&h=400&fit=crop"
 bullets:
-  - "KPI definition"
-  - "Progress tracking"
-  - "Impact reporting"
-paragraph: "Results you can see and measure."
+  - "Make ourselves unnecessary"
+  - "Measure success by capability left behind, not reports"
+  - "Build durable institutional capacity for lasting change"
+paragraph: "Our job is to make ourselves unnecessary. The ultimate measure of success is not the report we deliver, but the capability we leave behind. We build institutional capacity so clients can sustain change after the engagement."
 ---

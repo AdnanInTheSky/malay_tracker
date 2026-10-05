@@ -1,5 +1,5 @@
 ---
-subtitle: "Quality Assurance"
-title: "The Standard Inside Every Phase"
-paragraph: "Every phase of our methodology is underpinned by rigorous standards that ensure quality, consistency, and measurable outcomes."
+subtitle: "THE STANDARD INSIDE EVERY PHASE"
+title: "Six commitments that make the pathway IP3"
+paragraph: "The pathway describes the sequence. These describe the standard we hold ourselves to inside it."
 ---

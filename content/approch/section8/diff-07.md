@@ -1,6 +1,6 @@
-﻿---
+---
 order: 7
 type: "diff"
-title: "Transparent Methods"
-text: "Open processes with full visibility."
+title: "Timely Evaluation"
+text: "No evaluation that arrives too late to improve the programme."
 ---

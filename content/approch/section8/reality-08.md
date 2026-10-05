@@ -1,6 +1,6 @@
-﻿---
+---
 order: 8
 type: "reality"
-title: "Culture Evolution"
-text: "Shifting mindsets and behaviors to support new ways of working."
+title: "A change & capability plan"
+text: "The people, skills and institutional change required to sustain implementation."
 ---

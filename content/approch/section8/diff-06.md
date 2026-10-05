@@ -1,6 +1,6 @@
-﻿---
+---
 order: 6
 type: "diff"
-title: "Sustainable Outcomes"
-text: "Transformation that lasts beyond our engagement."
+title: "Evidence Before Scale"
+text: "No scale before evidence."
 ---

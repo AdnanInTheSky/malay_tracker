@@ -1,5 +1,5 @@
-﻿---
+---
 order: 4
-title: "Agile Delivery"
-text: "Iterative, incremental approach that adapts to changing requirements and feedback."
+title: "IP3 Impact Logic"
+text: "Link inputs, activities, outputs, outcomes and impact in a clear, testable chain."
 ---

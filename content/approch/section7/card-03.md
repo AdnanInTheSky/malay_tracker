@@ -1,5 +1,5 @@
-﻿---
+---
 order: 3
-title: "Design Thinking"
-text: "Human-centered problem solving that prioritizes empathy, creativity, and rationality."
+title: "Translational Policy Model"
+text: "Bridge the gap between research, evidence and implementation — from academic insight to operational reality."
 ---

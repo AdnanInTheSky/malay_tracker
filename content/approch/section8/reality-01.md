@@ -1,6 +1,6 @@
-﻿---
+---
 order: 1
 type: "reality"
-title: "Operational Design"
-text: "Translating strategy into actionable operational workflows and processes."
+title: "A decision-grade diagnostic"
+text: "Clear evidence of the root problem, risks, constraints and leverage points."
 ---

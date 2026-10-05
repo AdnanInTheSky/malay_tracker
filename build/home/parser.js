@@ -1,9 +1,9 @@
 const fs = require('fs');
 const path = require('path');
 
-const rootDir = path.resolve(__dirname, '..');
-const contentDir = path.join(rootDir, 'content');
-const dataDir = path.join(rootDir, 'data');
+const rootDir = path.resolve(__dirname, '../..');
+const contentDir = path.join(rootDir, 'content', 'home');
+const dataDir = path.join(rootDir, 'data', 'home');
 
 function parseYamlValue(str) {
     str = str.trim();
@@ -145,7 +145,7 @@ function writeJson(filename, data) {
     }
     const target = path.join(dataDir, filename);
     fs.writeFileSync(target, JSON.stringify(data, null, 2), 'utf8');
-    console.log(`[build] Created ${filename}`);
+    console.log(`[build:home] Created ${filename}`);
 }
 
 module.exports = {

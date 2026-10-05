@@ -1,0 +1,73 @@
+{
+  "subtitle": "Our Methodology",
+  "title": "The Pathway",
+  "paragraph": "A proven six-phase approach that guides organizations from initial assessment through to sustainable implementation.",
+  "cards": [
+    {
+      "title": "Diagnose",
+      "text": "Deep-dive analysis of current state, challenges, and opportunities across the organization.",
+      "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop",
+      "bullets": [
+        "Stakeholder interviews",
+        "Data analysis",
+        "Gap assessment"
+      ],
+      "paragraph": "We begin with a thorough understanding of your current landscape."
+    },
+    {
+      "title": "Prioritise",
+      "text": "Identify and rank initiatives based on impact, feasibility, and strategic alignment.",
+      "image": "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=600&h=400&fit=crop",
+      "bullets": [
+        "Impact mapping",
+        "Resource assessment",
+        "Risk evaluation"
+      ],
+      "paragraph": "Focus resources on what matters most."
+    },
+    {
+      "title": "Co-Design",
+      "text": "Collaborate with stakeholders to design solutions that work for everyone involved.",
+      "image": "https://images.unsplash.com/photo-1531482615713-2afd69097998?w=600&h=400&fit=crop",
+      "bullets": [
+        "Workshop facilitation",
+        "User journey mapping",
+        "Solution prototyping"
+      ],
+      "paragraph": "Solutions designed with people, not for them."
+    },
+    {
+      "title": "Test",
+      "text": "Validate approaches through pilot programs and structured feedback collection.",
+      "image": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=600&h=400&fit=crop",
+      "bullets": [
+        "Pilot programs",
+        "A/B testing",
+        "Feedback loops"
+      ],
+      "paragraph": "Learn fast, iterate quickly, scale confidently."
+    },
+    {
+      "title": "Implement",
+      "text": "Roll out solutions with full support, training, and change management.",
+      "image": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=600&h=400&fit=crop",
+      "bullets": [
+        "Change management",
+        "Training programs",
+        "Go-live support"
+      ],
+      "paragraph": "Smooth transitions with minimal disruption."
+    },
+    {
+      "title": "Institutionalise",
+      "text": "Embed new practices into organizational culture for lasting impact.",
+      "image": "https://images.unsplash.com/photo-1557804506-669a67965ba0?w=600&h=400&fit=crop",
+      "bullets": [
+        "Policy integration",
+        "Culture change",
+        "Sustainability planning"
+      ],
+      "paragraph": "Make transformation permanent and self-sustaining."
+    }
+  ]
+}

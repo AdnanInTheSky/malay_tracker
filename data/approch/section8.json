@@ -1,0 +1,116 @@
+{
+  "subtitle": "Our Philosophy",
+  "title": "From Consulting Outputs to Client Capability",
+  "paragraph": "We don't just deliver reports—we build the internal capacity to sustain and scale transformation long after our engagement ends.",
+  "backgroundImage": "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=1920&h=1080&fit=crop",
+  "cards": [
+    {
+      "text": "Move beyond deliverables to embedded capability"
+    },
+    {
+      "text": "Transfer knowledge, not just recommendations"
+    },
+    {
+      "text": "Build internal teams who can lead future change"
+    },
+    {
+      "text": "Create sustainable systems, not temporary fixes"
+    },
+    {
+      "text": "Develop decision-making frameworks for ongoing use"
+    },
+    {
+      "text": "Establish monitoring and evaluation practices"
+    },
+    {
+      "text": "Foster a culture of continuous improvement"
+    },
+    {
+      "text": "Ensure transformation outlasts any single engagement"
+    }
+  ],
+  "subsection1": {
+    "title": "Why the IP3 approach is different",
+    "paragraph": "Our methodology sets us apart from traditional consulting firms.",
+    "cards": [
+      {
+        "title": "Embedded Teams",
+        "text": "We work alongside your people, not in isolation."
+      },
+      {
+        "title": "Capability Focus",
+        "text": "Building skills that remain after we leave."
+      },
+      {
+        "title": "Evidence-Based",
+        "text": "Every recommendation backed by data and research."
+      },
+      {
+        "title": "Iterative Process",
+        "text": "Adapting as we learn, not rigidly following plans."
+      },
+      {
+        "title": "Stakeholder-Centered",
+        "text": "Designing with those affected by change."
+      },
+      {
+        "title": "Sustainable Outcomes",
+        "text": "Transformation that lasts beyond our engagement."
+      },
+      {
+        "title": "Transparent Methods",
+        "text": "Open processes with full visibility."
+      },
+      {
+        "title": "Measurable Impact",
+        "text": "Clear KPIs and outcome tracking."
+      },
+      {
+        "title": "Adaptive Framework",
+        "text": "Flexible enough for any context or challenge."
+      }
+    ]
+  },
+  "subsection2": {
+    "title": "From advice to operating reality",
+    "paragraph": "Bridging the gap between strategic recommendations and day-to-day implementation.",
+    "cards": [
+      {
+        "title": "Operational Design",
+        "text": "Translating strategy into actionable operational workflows and processes."
+      },
+      {
+        "title": "Change Activation",
+        "text": "Mobilizing people and systems to adopt new ways of working effectively."
+      },
+      {
+        "title": "Capability Transfer",
+        "text": "Building internal expertise so teams can operate independently."
+      },
+      {
+        "title": "System Integration",
+        "text": "Embedding new practices into existing organizational structures."
+      },
+      {
+        "title": "Performance Monitoring",
+        "text": "Tracking outcomes and adjusting approaches based on real data."
+      },
+      {
+        "title": "Sustainability Planning",
+        "text": "Ensuring changes persist and evolve over the long term."
+      },
+      {
+        "title": "Knowledge Management",
+        "text": "Capturing and sharing learnings across the organization."
+      },
+      {
+        "title": "Culture Evolution",
+        "text": "Shifting mindsets and behaviors to support new ways of working."
+      },
+      {
+        "title": "Continuous Improvement",
+        "text": "Establishing mechanisms for ongoing refinement and adaptation."
+      }
+    ]
+  }
+}

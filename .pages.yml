@@ -9,7 +9,7 @@ content:
   - name: hero_header
     label: "01. Hero - Header & Text"
     type: file
-    path: content/hero/section.md
+    path: content/home/hero/section.md
     fields:
       - name: eyebrow
         label: "Eyebrow"
@@ -28,7 +28,7 @@ content:
   - name: hero_slides
     label: "01. Hero - Background Media Slides"
     type: collection
-    path: content/hero
+    path: content/home/hero
     exclude:
       - section.md
     view:
@@ -60,7 +60,7 @@ content:
   - name: mandates_header
     label: "02. Mandates - Header"
     type: file
-    path: content/mandates/section.md
+    path: content/home/mandates/section.md
     fields:
       - name: eyebrow
         label: "Eyebrow"
@@ -75,7 +75,7 @@ content:
   - name: mandates_cards
     label: "02. Mandates - Step Cards"
     type: collection
-    path: content/mandates
+    path: content/home/mandates
     exclude:
       - section.md
     view:
@@ -102,7 +102,7 @@ content:
   - name: capabilities_header
     label: "03. Capabilities - Header"
     type: file
-    path: content/capabilities/section.md
+    path: content/home/capabilities/section.md
     fields:
       - name: eyebrow
         label: "Eyebrow"
@@ -114,7 +114,7 @@ content:
   - name: capabilities_cards
     label: "03. Capabilities - Service Cards"
     type: collection
-    path: content/capabilities
+    path: content/home/capabilities
     exclude:
       - section.md
     view:
@@ -145,7 +145,7 @@ content:
   - name: why_ip3_header
     label: "04. Why IP3 - Header"
     type: file
-    path: content/why-ip3/section.md
+    path: content/home/why-ip3/section.md
     fields:
       - name: eyebrow
         label: "Eyebrow"
@@ -160,7 +160,7 @@ content:
   - name: why_ip3_reasons
     label: "04. Why IP3 - Value Pillars"
     type: collection
-    path: content/why-ip3
+    path: content/home/why-ip3
     exclude:
       - section.md
     view:
@@ -196,7 +196,7 @@ content:
   - name: sectors_header
     label: "05. Sectors - Header"
     type: file
-    path: content/sectors/section.md
+    path: content/home/sectors/section.md
     fields:
       - name: eyebrow
         label: "Eyebrow"
@@ -214,7 +214,7 @@ content:
   - name: sectors_cards
     label: "05. Sectors - Sector Cards"
     type: collection
-    path: content/sectors
+    path: content/home/sectors
     exclude:
       - section.md
     view:
@@ -248,7 +248,7 @@ content:
   - name: translation_header
     label: "06. Translation - Header"
     type: file
-    path: content/translation/section.md
+    path: content/home/translation/section.md
     fields:
       - name: eyebrow
         label: "Eyebrow"
@@ -263,7 +263,7 @@ content:
   - name: translation_nodes
     label: "06. Translation - Pathway Nodes"
     type: collection
-    path: content/translation
+    path: content/home/translation
     exclude:
       - section.md
       - "dropdown-*.md"
@@ -291,7 +291,7 @@ content:
   - name: translation_dropdowns
     label: "06. Translation - Deliverables Accordion"
     type: collection
-    path: content/translation
+    path: content/home/translation
     exclude:
       - section.md
       - "node-*.md"
@@ -326,7 +326,7 @@ content:
   - name: engagements_header
     label: "07. Engagements - Header & Pipeline"
     type: file
-    path: content/engagements/section.md
+    path: content/home/engagements/section.md
     fields:
       - name: eyebrow
         label: "Eyebrow"
@@ -347,7 +347,7 @@ content:
   - name: engagements_cases
     label: "07. Engagements - Case Studies"
     type: collection
-    path: content/engagements
+    path: content/home/engagements
     exclude:
       - section.md
       - "advisory-*.md"
@@ -388,7 +388,7 @@ content:
   - name: engagements_advisory
     label: "07. Engagements - Advisory Highlights"
     type: collection
-    path: content/engagements
+    path: content/home/engagements
     exclude:
       - section.md
       - "case-*.md"
@@ -422,7 +422,7 @@ content:
   - name: research_header
     label: "08. Research - Header"
     type: file
-    path: content/research/section.md
+    path: content/home/research/section.md
     fields:
       - name: tagline
         label: "Tagline"
@@ -437,7 +437,7 @@ content:
   - name: research_cards
     label: "08. Research - Studies"
     type: collection
-    path: content/research
+    path: content/home/research
     exclude:
       - section.md
     view:
@@ -480,7 +480,7 @@ content:
   - name: evidence_header
     label: "09. Evidence - Header"
     type: file
-    path: content/evidence/section.md
+    path: content/home/evidence/section.md
     fields:
       - name: eyebrow
         label: "Eyebrow"
@@ -495,7 +495,7 @@ content:
   - name: evidence_cards
     label: "09. Evidence - 3D Papers"
     type: collection
-    path: content/evidence
+    path: content/home/evidence
     exclude:
       - section.md
     view:
@@ -541,7 +541,7 @@ content:
   - name: convening_header
     label: "10. Convening - Header"
     type: file
-    path: content/convening/section.md
+    path: content/home/convening/section.md
     fields:
       - name: sectionTagline
         label: "Section Tagline"
@@ -550,7 +550,7 @@ content:
   - name: convening_cards
     label: "10. Convening - Formats"
     type: collection
-    path: content/convening
+    path: content/home/convening
     exclude:
       - section.md
     view:
@@ -580,7 +580,7 @@ content:
   - name: clients_header
     label: "11. Clients - Header"
     type: file
-    path: content/clients/section.md
+    path: content/home/clients/section.md
     fields:
       - name: tagline
         label: "Tagline"
@@ -595,7 +595,7 @@ content:
   - name: clients_logos
     label: "11. Clients - Partner Logos"
     type: collection
-    path: content/clients
+    path: content/home/clients
     exclude:
       - section.md
     view:
@@ -622,7 +622,7 @@ content:
   - name: endorsements_header
     label: "12. Endorsements - Header"
     type: file
-    path: content/endorsements/section.md
+    path: content/home/endorsements/section.md
     fields:
       - name: tagline
         label: "Tagline"
@@ -637,7 +637,7 @@ content:
   - name: endorsements_quotes
     label: "12. Endorsements - Testimonials"
     type: collection
-    path: content/endorsements
+    path: content/home/endorsements
     exclude:
       - section.md
     view:
@@ -673,7 +673,7 @@ content:
   - name: deck_header
     label: "13. Deck - Header & Tags"
     type: file
-    path: content/deck/section.md
+    path: content/home/deck/section.md
     fields:
       - name: tagline
         label: "Tagline"
@@ -692,7 +692,7 @@ content:
   - name: deck_slides
     label: "13. Deck - Capability Slides"
     type: collection
-    path: content/deck
+    path: content/home/deck
     exclude:
       - section.md
     view:
@@ -732,7 +732,7 @@ content:
   - name: publications_header
     label: "14. Publications - Header & Tags"
     type: file
-    path: content/publications/section.md
+    path: content/home/publications/section.md
     fields:
       - name: tagline
         label: "Tagline"
@@ -751,7 +751,7 @@ content:
   - name: publications_cards
     label: "14. Publications - Papers & Briefs"
     type: collection
-    path: content/publications
+    path: content/home/publications
     exclude:
       - section.md
     view:
@@ -797,7 +797,7 @@ content:
   - name: leadership
     label: "15. Leadership - Bio"
     type: file
-    path: content/leadership/dr-amara-singh.md
+    path: content/home/leadership/dr-amara-singh.md
     fields:
       - name: eyebrow
         label: "Eyebrow"
@@ -821,7 +821,7 @@ content:
   - name: contact_header
     label: "16. Contact - Header & Focus Areas"
     type: file
-    path: content/contact/section.md
+    path: content/home/contact/section.md
     fields:
       - name: eyebrow
         label: "Eyebrow"
@@ -840,7 +840,7 @@ content:
   - name: contact_paths
     label: "16. Contact - Engagement Pathways"
     type: collection
-    path: content/contact
+    path: content/home/contact
     exclude:
       - section.md
     view:
@@ -867,7 +867,7 @@ content:
   - name: faq_header
     label: "17. FAQ - Header"
     type: file
-    path: content/faq/section.md
+    path: content/home/faq/section.md
     fields:
       - name: eyebrow
         label: "Eyebrow"
@@ -879,7 +879,7 @@ content:
   - name: faq_items
     label: "17. FAQ - Questions & Answers"
     type: collection
-    path: content/faq
+    path: content/home/faq
     exclude:
       - section.md
     view:
@@ -906,7 +906,7 @@ content:
   - name: organization
     label: "18. Organization - Structured Data & Contact Info"
     type: file
-    path: content/organization/organization.md
+    path: content/home/organization/organization.md
     fields:
       - name: legalName
         label: "Legal Organization Name"
@@ -935,3 +935,496 @@ content:
       - name: addressCountry
         label: "Country Code (ISO)"
         type: string
+
+  # =============================================================
+  # APPROACH PAGE SECTIONS
+  # =============================================================
+
+  # -------------------------------------------------------------
+  # Approach Section 1: Policy to Implementation
+  # -------------------------------------------------------------
+  - name: approch_section1_header
+    label: "Approach - 01. Policy to Implementation - Header"
+    type: file
+    path: content/approch/section1/section.md
+    fields:
+      - name: subtitle
+        label: "Eyebrow / Subtitle"
+        type: string
+      - name: title
+        label: "Main Headline"
+        type: string
+      - name: paragraph
+        label: "Introduction Text"
+        type: text
+      - name: buttonText
+        label: "CTA Button Text"
+        type: string
+      - name: backgroundImage
+        label: "Background Image"
+        type: image
+      - name: backgroundVideo
+        label: "Background Video URL (optional)"
+        type: string
+
+  - name: approch_section1_cards
+    label: "Approach - 01. Policy to Implementation - Cards"
+    type: collection
+    path: content/approch/section1
+    exclude:
+      - section.md
+    view:
+      primary: text
+      fields: [order, text]
+      sort: [order]
+      default:
+        sort: order
+        order: asc
+    fields:
+      - name: order
+        label: "Step Order"
+        type: number
+      - name: text
+        label: "Step Name"
+        type: string
+
+  # -------------------------------------------------------------
+  # Approach Section 2: Work in Action
+  # -------------------------------------------------------------
+  - name: approch_section2_header
+    label: "Approach - 02. Work in Action - Header"
+    type: file
+    path: content/approch/section2/section.md
+    fields:
+      - name: subtitle
+        label: "Eyebrow / Subtitle"
+        type: string
+      - name: title
+        label: "Main Headline"
+        type: string
+      - name: paragraph
+        label: "Introduction Text"
+        type: text
+
+  - name: approch_section2_items
+    label: "Approach - 02. Work in Action - Stories"
+    type: collection
+    path: content/approch/section2
+    exclude:
+      - section.md
+    view:
+      primary: title
+      fields: [order, title, category]
+      sort: [order]
+      default:
+        sort: order
+        order: asc
+    fields:
+      - name: order
+        label: "Order"
+        type: number
+      - name: title
+        label: "Story Title"
+        type: string
+      - name: category
+        label: "Category"
+        type: string
+      - name: image
+        label: "Cover Image"
+        type: image
+
+  # -------------------------------------------------------------
+  # Approach Section 3: Transformation Journey
+  # -------------------------------------------------------------
+  - name: approch_section3_header
+    label: "Approach - 03. Transformation Journey - Header & Framework"
+    type: file
+    path: content/approch/section3/section.md
+    fields:
+      - name: subtitle
+        label: "Eyebrow / Subtitle"
+        type: string
+      - name: title
+        label: "Main Headline"
+        type: string
+      - name: paragraph
+        label: "Introduction Text"
+        type: text
+      - name: currentStateTitle
+        label: "Current State Title"
+        type: string
+      - name: currentStateItems
+        label: "Current State Pain Points"
+        type: string
+        list: true
+      - name: desiredStateTitle
+        label: "Desired State Title"
+        type: string
+      - name: desiredStateItems
+        label: "Desired State Outcomes"
+        type: string
+        list: true
+      - name: frameworkTitle
+        label: "Framework Title"
+        type: string
+      - name: frameworkImage
+        label: "Framework Featured Image"
+        type: image
+      - name: frameworkItems
+        label: "Framework Pillars / Steps"
+        type: string
+        list: true
+
+  - name: approch_section3_questions
+    label: "Approach - 03. Transformation Journey - Question Cards"
+    type: collection
+    path: content/approch/section3
+    exclude:
+      - section.md
+    view:
+      primary: title
+      fields: [order, title]
+      sort: [order]
+      default:
+        sort: order
+        order: asc
+    fields:
+      - name: order
+        label: "Order"
+        type: number
+      - name: title
+        label: "Question Title"
+        type: string
+      - name: text
+        label: "Description"
+        type: text
+
+  # -------------------------------------------------------------
+  # Approach Section 4: The Pathway
+  # -------------------------------------------------------------
+  - name: approch_section4_header
+    label: "Approach - 04. The Pathway - Header"
+    type: file
+    path: content/approch/section4/section.md
+    fields:
+      - name: subtitle
+        label: "Eyebrow / Subtitle"
+        type: string
+      - name: title
+        label: "Main Headline"
+        type: string
+      - name: paragraph
+        label: "Introduction Text"
+        type: text
+
+  - name: approch_section4_phases
+    label: "Approach - 04. The Pathway - 6 Phases"
+    type: collection
+    path: content/approch/section4
+    exclude:
+      - section.md
+    view:
+      primary: title
+      fields: [order, title]
+      sort: [order]
+      default:
+        sort: order
+        order: asc
+    fields:
+      - name: order
+        label: "Phase Order"
+        type: number
+      - name: title
+        label: "Phase Title"
+        type: string
+      - name: text
+        label: "Short Description"
+        type: text
+      - name: image
+        label: "Modal Featured Image"
+        type: image
+      - name: bullets
+        label: "Key Activities"
+        type: string
+        list: true
+      - name: paragraph
+        label: "Detailed Notes (Modal)"
+        type: text
+
+  # -------------------------------------------------------------
+  # Approach Section 5: Quality Standards
+  # -------------------------------------------------------------
+  - name: approch_section5_header
+    label: "Approach - 05. Quality Standards - Header"
+    type: file
+    path: content/approch/section5/section.md
+    fields:
+      - name: subtitle
+        label: "Eyebrow / Subtitle"
+        type: string
+      - name: title
+        label: "Main Headline"
+        type: string
+      - name: paragraph
+        label: "Introduction Text"
+        type: text
+
+  - name: approch_section5_standards
+    label: "Approach - 05. Quality Standards - Standards Cards"
+    type: collection
+    path: content/approch/section5
+    exclude:
+      - section.md
+    view:
+      primary: title
+      fields: [order, title]
+      sort: [order]
+      default:
+        sort: order
+        order: asc
+    fields:
+      - name: order
+        label: "Standard Order"
+        type: number
+      - name: title
+        label: "Standard Title"
+        type: string
+      - name: text
+        label: "Short Description"
+        type: text
+      - name: image
+        label: "Modal Featured Image"
+        type: image
+      - name: bullets
+        label: "Key Standards Activities"
+        type: string
+        list: true
+      - name: paragraph
+        label: "Detailed Notes (Modal)"
+        type: text
+
+  # -------------------------------------------------------------
+  # Approach Section 6: People Experience
+  # -------------------------------------------------------------
+  - name: approch_section6_header
+    label: "Approach - 06. People Experience - Header & Meta"
+    type: file
+    path: content/approch/section6/section.md
+    fields:
+      - name: subtitle
+        label: "Eyebrow / Subtitle"
+        type: string
+      - name: title
+        label: "Main Headline"
+        type: string
+      - name: paragraph
+        label: "Introduction Text"
+        type: text
+      - name: iterateText
+        label: "Iteration Tagline"
+        type: string
+      - name: tags
+        label: "Stakeholder Tags"
+        type: string
+        list: true
+      - name: questionText
+        label: "Core Question Prompt"
+        type: string
+      - name: questionAnswer
+        label: "Answer / Explanation"
+        type: text
+      - name: showQuestion
+        label: "Expand Question by Default"
+        type: boolean
+
+  - name: approch_section6_orbit
+    label: "Approach - 06. People Experience - Orbit Steps"
+    type: collection
+    path: content/approch/section6
+    exclude:
+      - section.md
+    view:
+      primary: label
+      fields: [order, shortLabel, label]
+      sort: [order]
+      default:
+        sort: order
+        order: asc
+    fields:
+      - name: order
+        label: "Step Order"
+        type: number
+      - name: shortLabel
+        label: "Short Number Label (e.g. 01)"
+        type: string
+      - name: label
+        label: "Step Name"
+        type: string
+      - name: description
+        label: "Step Description"
+        type: text
+
+  # -------------------------------------------------------------
+  # Approach Section 7: Disciplined Methods
+  # -------------------------------------------------------------
+  - name: approch_section7_header
+    label: "Approach - 07. Disciplined Methods - Header & Partnership"
+    type: file
+    path: content/approch/section7/section.md
+    fields:
+      - name: subtitle
+        label: "Eyebrow / Subtitle"
+        type: string
+      - name: title
+        label: "Main Headline"
+        type: string
+      - name: paragraph
+        label: "Introduction Text"
+        type: text
+      - name: backgroundImage
+        label: "Background Image"
+        type: image
+      - name: subsectionSubtitle
+        label: "Partnership Subtitle"
+        type: string
+      - name: subsectionTitle
+        label: "Partnership Title"
+        type: string
+      - name: subsectionDescription
+        label: "Partnership Description"
+        type: text
+      - name: leftTitle
+        label: "We Bring Title"
+        type: string
+      - name: leftItems
+        label: "We Bring Items"
+        type: string
+        list: true
+      - name: rightTitle
+        label: "You Bring Title"
+        type: string
+      - name: rightItems
+        label: "You Bring Items"
+        type: string
+        list: true
+      - name: togetherTitle
+        label: "Together Title"
+        type: string
+      - name: togetherDescription
+        label: "Together Description"
+        type: text
+      - name: togetherTags
+        label: "Together Tags"
+        type: string
+        list: true
+
+  - name: approch_section7_cards
+    label: "Approach - 07. Disciplined Methods - Method Cards"
+    type: collection
+    path: content/approch/section7
+    exclude:
+      - section.md
+    view:
+      primary: title
+      fields: [order, title]
+      sort: [order]
+      default:
+        sort: order
+        order: asc
+    fields:
+      - name: order
+        label: "Order"
+        type: number
+      - name: title
+        label: "Method Title"
+        type: string
+      - name: text
+        label: "Description"
+        type: text
+
+  # -------------------------------------------------------------
+  # Approach Section 8: Client Capability
+  # -------------------------------------------------------------
+  - name: approch_section8_header
+    label: "Approach - 08. Client Capability - Header & Commitments"
+    type: file
+    path: content/approch/section8/section.md
+    fields:
+      - name: subtitle
+        label: "Eyebrow / Subtitle"
+        type: string
+      - name: title
+        label: "Main Headline"
+        type: string
+      - name: paragraph
+        label: "Introduction Text"
+        type: text
+      - name: backgroundImage
+        label: "Background Image"
+        type: image
+      - name: pillars
+        label: "Capability Commitments"
+        type: string
+        list: true
+      - name: subsection1Title
+        label: "Why Different Title"
+        type: string
+      - name: subsection1Paragraph
+        label: "Why Different Paragraph"
+        type: text
+      - name: subsection2Title
+        label: "Operating Reality Title"
+        type: string
+      - name: subsection2Paragraph
+        label: "Operating Reality Paragraph"
+        type: text
+
+  - name: approch_section8_diff
+    label: "Approach - 08. Client Capability - Why IP3 Different Cards"
+    type: collection
+    path: content/approch/section8
+    exclude:
+      - section.md
+      - "reality-*.md"
+    view:
+      primary: title
+      fields: [order, title]
+      sort: [order]
+      default:
+        sort: order
+        order: asc
+    fields:
+      - name: order
+        label: "Order"
+        type: number
+      - name: title
+        label: "Card Title"
+        type: string
+      - name: text
+        label: "Card Description"
+        type: text
+
+  - name: approch_section8_reality
+    label: "Approach - 08. Client Capability - Operating Reality Cards"
+    type: collection
+    path: content/approch/section8
+    exclude:
+      - section.md
+      - "diff-*.md"
+    view:
+      primary: title
+      fields: [order, title]
+      sort: [order]
+      default:
+        sort: order
+        order: asc
+    fields:
+      - name: order
+        label: "Order"
+        type: number
+      - name: title
+        label: "Card Title"
+        type: string
+      - name: text
+        label: "Card Description"
+        type: text

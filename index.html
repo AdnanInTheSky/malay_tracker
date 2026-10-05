@@ -914,11 +914,11 @@
         // Helper to load data from section's dedicated JSON file
         async function loadData(filename) {
             try {
-                const res = await fetch(`data/${filename}`);
+                const res = await fetch(`data/home/${filename}`);
                 if (!res.ok) throw new Error(`HTTP ${res.status}`);
                 return await res.json();
             } catch (err) {
-                console.error(`Failed to load data/${filename}:`, err);
+                console.error(`Failed to load data/home/${filename}:`, err);
                 return null;
             }
         }

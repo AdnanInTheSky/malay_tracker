@@ -1,0 +1,72 @@
+{
+  "subtitle": "Our Approach",
+  "title": "Disciplined Methods · Flexible Application",
+  "paragraph": "We combine rigorous methodology with adaptive execution to deliver results that are both evidence-based and contextually appropriate.",
+  "backgroundImage": "https://images.unsplash.com/photo-1497366216548-37526070297c?w=1920&h=1080&fit=crop",
+  "cards": [
+    {
+      "title": "Systems Thinking",
+      "text": "Understanding complex interconnections and feedback loops within organizational ecosystems."
+    },
+    {
+      "title": "Behavioral Science",
+      "text": "Applying insights from human behavior to design interventions that actually change outcomes."
+    },
+    {
+      "title": "Design Thinking",
+      "text": "Human-centered problem solving that prioritizes empathy, creativity, and rationality."
+    },
+    {
+      "title": "Agile Delivery",
+      "text": "Iterative, incremental approach that adapts to changing requirements and feedback."
+    },
+    {
+      "title": "Change Management",
+      "text": "Structured approaches to transitioning individuals and organizations to desired future states."
+    },
+    {
+      "title": "Capability Building",
+      "text": "Developing internal skills and knowledge so organizations can sustain transformation independently."
+    }
+  ],
+  "subsection": {
+    "subtitle": "Working With You, Not Around You",
+    "title": "Transformation cannot be outsourced.",
+    "description": "True transformation happens when external expertise meets internal knowledge in genuine partnership.",
+    "leftTitle": "IP3 provides",
+    "leftItems": [
+      "Interdisciplinary expertise",
+      "Independent analysis",
+      "Methods and frameworks",
+      "Research and modelling",
+      "Facilitation",
+      "Technical design",
+      "Implementation support",
+      "External benchmarking",
+      "Quality assurance"
+    ],
+    "rightTitle": "Client teams provide",
+    "rightItems": [
+      "Institutional intelligence",
+      "Decision authority",
+      "Operational knowledge",
+      "Internal data",
+      "Staff participation",
+      "Stakeholder access",
+      "Implementation ownership"
+    ],
+    "togetherTitle": "Together we",
+    "togetherDescription": "A unified partnership driving meaningful, lasting change through every phase of transformation.",
+    "togetherTags": [
+      "Diagnose",
+      "Prioritise",
+      "Co-Design",
+      "Test",
+      "Implement",
+      "Monitor",
+      "Learn",
+      "Build Capability",
+      "Institutionalise"
+    ]
+  }
+}

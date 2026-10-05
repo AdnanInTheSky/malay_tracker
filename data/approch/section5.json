@@ -1,0 +1,73 @@
+{
+  "subtitle": "Quality Assurance",
+  "title": "The Standard Inside Every Phase",
+  "paragraph": "Every phase of our methodology is underpinned by rigorous standards that ensure quality, consistency, and measurable outcomes.",
+  "cards": [
+    {
+      "title": "Evidence-Based",
+      "text": "All decisions grounded in data, research, and stakeholder insights rather than assumptions.",
+      "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop",
+      "bullets": [
+        "Data collection",
+        "Research synthesis",
+        "Evidence mapping"
+      ],
+      "paragraph": "We let evidence guide every decision."
+    },
+    {
+      "title": "People-Centered",
+      "text": "Designing with and for the people who will use, deliver, and be affected by the changes.",
+      "image": "https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=600&h=400&fit=crop",
+      "bullets": [
+        "User research",
+        "Co-design sessions",
+        "Feedback integration"
+      ],
+      "paragraph": "People at the heart of every solution."
+    },
+    {
+      "title": "Iterative",
+      "text": "Continuous refinement through rapid prototyping, testing, and learning cycles.",
+      "image": "https://images.unsplash.com/photo-1531482615713-2afd69097998?w=600&h=400&fit=crop",
+      "bullets": [
+        "Rapid prototyping",
+        "Testing cycles",
+        "Continuous improvement"
+      ],
+      "paragraph": "Learn, adapt, and improve constantly."
+    },
+    {
+      "title": "Transparent",
+      "text": "Open communication and clear documentation throughout every stage of the process.",
+      "image": "https://images.unsplash.com/photo-1552664730-d307ca884978?w=600&h=400&fit=crop",
+      "bullets": [
+        "Progress reporting",
+        "Stakeholder updates",
+        "Open documentation"
+      ],
+      "paragraph": "No surprises, full visibility."
+    },
+    {
+      "title": "Sustainable",
+      "text": "Building capabilities and systems that endure beyond the initial engagement period.",
+      "image": "https://images.unsplash.com/photo-1557804506-669a67965ba0?w=600&h=400&fit=crop",
+      "bullets": [
+        "Capability building",
+        "Knowledge transfer",
+        "Long-term planning"
+      ],
+      "paragraph": "Transformation that lasts."
+    },
+    {
+      "title": "Measurable",
+      "text": "Clear KPIs and outcomes tracking to demonstrate impact and return on investment.",
+      "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop",
+      "bullets": [
+        "KPI definition",
+        "Progress tracking",
+        "Impact reporting"
+      ],
+      "paragraph": "Results you can see and measure."
+    }
+  ]
+}

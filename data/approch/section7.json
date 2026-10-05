@@ -1,48 +1,48 @@
 {
-  "subtitle": "Our Approach",
-  "title": "Disciplined Methods · Flexible Application",
-  "paragraph": "We combine rigorous methodology with adaptive execution to deliver results that are both evidence-based and contextually appropriate.",
+  "subtitle": "DISCIPLINED RIGOUR · FLEXIBLE APPLICATION",
+  "title": "The pathway is consistent. The toolkit changes.",
+  "paragraph": "We do not force every problem into one template. Methods are selected and combined according to the decision, the sector, the evidence available and the capacity to implement.",
   "backgroundImage": "https://images.unsplash.com/photo-1497366216548-37526070297c?w=1920&h=1080&fit=crop",
   "cards": [
     {
-      "title": "Systems Thinking",
-      "text": "Understanding complex interconnections and feedback loops within organizational ecosystems."
+      "title": "Actionable Architecture",
+      "text": "Turn complexity and evidence into clarity that can be implemented."
     },
     {
-      "title": "Behavioral Science",
-      "text": "Applying insights from human behavior to design interventions that actually change outcomes."
+      "title": "Policy Solution Architecture",
+      "text": "Design a coherent blueprint for connected problems."
     },
     {
-      "title": "Design Thinking",
-      "text": "Human-centered problem solving that prioritizes empathy, creativity, and rationality."
+      "title": "Translational Policy Model",
+      "text": "Bridge the gap between research, evidence and implementation — from academic insight to operational reality."
     },
     {
-      "title": "Agile Delivery",
-      "text": "Iterative, incremental approach that adapts to changing requirements and feedback."
+      "title": "IP3 Impact Logic",
+      "text": "Link inputs, activities, outputs, outcomes and impact in a clear, testable chain."
     },
     {
-      "title": "Change Management",
-      "text": "Structured approaches to transitioning individuals and organizations to desired future states."
+      "title": "Dynamic Network Model",
+      "text": "Assemble interdisciplinary teams around specific challenges, scaling capacity to the work and contracting it back when the work is done."
     },
     {
-      "title": "Capability Building",
-      "text": "Developing internal skills and knowledge so organizations can sustain transformation independently."
+      "title": "Technology as Enabler",
+      "text": "Technology is an enabler. Governance and inclusion determine whether it creates value. Our approach asks not only whether something can be digitised, but whether it should be — and for whom."
     }
   ],
   "subsection": {
-    "subtitle": "Working With You, Not Around You",
+    "subtitle": "BRINGING BOTH SIDES, NOT JUST ONE",
     "title": "Transformation cannot be outsourced.",
     "description": "True transformation happens when external expertise meets internal knowledge in genuine partnership.",
     "leftTitle": "IP3 provides",
     "leftItems": [
-      "Interdisciplinary expertise",
+      "Institutional diagnostics",
       "Independent analysis",
-      "Methods and frameworks",
+      "Technical and financial",
       "Research and modelling",
       "Facilitation",
       "Technical design",
       "Implementation support",
-      "External benchmarking",
+      "Change management",
       "Quality assurance"
     ],
     "rightTitle": "Client teams provide",
@@ -50,23 +50,24 @@
       "Institutional intelligence",
       "Decision authority",
       "Operational knowledge",
-      "Internal data",
-      "Staff participation",
-      "Stakeholder access",
-      "Implementation ownership"
+      "User and citizen insight",
+      "Political will",
+      "Budget and resources",
+      "Implementation ownership",
+      "Organisational learning"
     ],
     "togetherTitle": "Together we",
-    "togetherDescription": "A unified partnership driving meaningful, lasting change through every phase of transformation.",
+    "togetherDescription": "Leaders and practitioners partnering to design, test, implement, monitor, learn, build capability, and achieve long-term sustainability.",
     "togetherTags": [
-      "Diagnose",
-      "Prioritise",
-      "Co-Design",
+      "Leaders",
+      "Practitioners",
+      "Design",
       "Test",
       "Implement",
       "Monitor",
       "Learn",
       "Build Capability",
-      "Institutionalise"
+      "Sustainability"
     ]
   }
 }

@@ -1,115 +1,119 @@
 {
-  "subtitle": "Our Philosophy",
-  "title": "From Consulting Outputs to Client Capability",
-  "paragraph": "We don't just deliver reports—we build the internal capacity to sustain and scale transformation long after our engagement ends.",
+  "subtitle": "FROM CONSULTING OUTPUT TO CLIENT CAPABILITY",
+  "title": "The objective is not a better report. It is a system better able to act.",
+  "paragraph": "This is the difference between producing analysis and building actionable architecture.",
   "backgroundImage": "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=1920&h=1080&fit=crop",
   "cards": [
     {
-      "text": "Move beyond deliverables to embedded capability"
+      "text": "From fragmented understanding of the problem → Decision-grade view of the system and its root causes"
     },
     {
-      "text": "Transfer knowledge, not just recommendations"
+      "text": "From recommendations without institutional ownership → Solution architecture with clear accountabilities"
     },
     {
-      "text": "Build internal teams who can lead future change"
+      "text": "From technology-led digitisation → Digitally-enabled, governed and inclusive digital transformation"
     },
     {
-      "text": "Create sustainable systems, not temporary fixes"
+      "text": "From a project plan → Sequenced implementation roadmap with resources, risks and decision gates"
     },
     {
-      "text": "Develop decision-making frameworks for ongoing use"
+      "text": "From external expertise carrying the reform → Client capability able to operate and adapt it"
     },
     {
-      "text": "Establish monitoring and evaluation practices"
+      "text": "From monitoring for reporting → Evidence for management, learning and course correction"
     },
     {
-      "text": "Foster a culture of continuous improvement"
+      "text": "From a successful pilot → Evidence-based decision about whether and how to scale"
     },
     {
-      "text": "Ensure transformation outlasts any single engagement"
+      "text": "From producing analysis → Building actionable architecture"
     }
   ],
   "subsection1": {
     "title": "Why the IP3 approach is different",
-    "paragraph": "Our methodology sets us apart from traditional consulting firms.",
+    "paragraph": "The principles that distinguish our methodology from conventional consulting.",
     "cards": [
       {
-        "title": "Embedded Teams",
-        "text": "We work alongside your people, not in isolation."
+        "title": "Delivery Pathway",
+        "text": "No strategy without a pathway to delivery."
       },
       {
-        "title": "Capability Focus",
-        "text": "Building skills that remain after we leave."
+        "title": "Institutional Ownership",
+        "text": "No digital tool without institutional ownership."
       },
       {
-        "title": "Evidence-Based",
-        "text": "Every recommendation backed by data and research."
+        "title": "Implementation Question",
+        "text": "No policy recommendation without an implementation question."
       },
       {
-        "title": "Iterative Process",
-        "text": "Adapting as we learn, not rigidly following plans."
+        "title": "Cost, Benefit & Risk",
+        "text": "No major investment without understanding cost, benefits and risk."
       },
       {
-        "title": "Stakeholder-Centered",
-        "text": "Designing with those affected by change."
+        "title": "People-Centered",
+        "text": "No transformation without the people who must deliver it."
       },
       {
-        "title": "Sustainable Outcomes",
-        "text": "Transformation that lasts beyond our engagement."
+        "title": "Evidence Before Scale",
+        "text": "No scale before evidence."
       },
       {
-        "title": "Transparent Methods",
-        "text": "Open processes with full visibility."
+        "title": "Timely Evaluation",
+        "text": "No evaluation that arrives too late to improve the programme."
       },
       {
-        "title": "Measurable Impact",
-        "text": "Clear KPIs and outcome tracking."
+        "title": "Actionable Architecture",
+        "text": "This is the difference between producing analysis and building actionable architecture."
       },
       {
-        "title": "Adaptive Framework",
-        "text": "Flexible enough for any context or challenge."
+        "title": "Built Different",
+        "text": "Research that changes decisions. Architecture that can be implemented. Technology designed around people. Institutions equipped to sustain change."
       }
     ]
   },
   "subsection2": {
-    "title": "From advice to operating reality",
-    "paragraph": "Bridging the gap between strategic recommendations and day-to-day implementation.",
+    "title": "From advice to practical reality",
+    "paragraph": "A recommendation is only one possible output across our transformation delivery.",
     "cards": [
       {
-        "title": "Operational Design",
-        "text": "Translating strategy into actionable operational workflows and processes."
+        "title": "A decision-grade diagnostic",
+        "text": "Clear evidence of the root problem, risks, constraints and leverage points."
       },
       {
-        "title": "Change Activation",
-        "text": "Mobilizing people and systems to adopt new ways of working effectively."
+        "title": "A target-state blueprint",
+        "text": "A shared vision of what the future policy, system or programme should look like."
       },
       {
-        "title": "Capability Transfer",
-        "text": "Building internal expertise so teams can operate independently."
+        "title": "A tested solution",
+        "text": "A prototype, pilot, policy or model that has been validated with users and institutions."
       },
       {
-        "title": "System Integration",
-        "text": "Embedding new practices into existing organizational structures."
+        "title": "An implementation roadmap",
+        "text": "Sequenced actions, responsibilities, resources and dependencies with decision gates."
       },
       {
-        "title": "Performance Monitoring",
-        "text": "Tracking outcomes and adjusting approaches based on real data."
+        "title": "A business & governance case",
+        "text": "Costs, benefits, financing options, risks, institutional and governance arrangements."
       },
       {
-        "title": "Sustainability Planning",
-        "text": "Ensuring changes persist and evolve over the long term."
+        "title": "A policy or regulation",
+        "text": "Drafted, costed, consulted and ready for adoption or amendment."
       },
       {
-        "title": "Knowledge Management",
-        "text": "Capturing and sharing learnings across the organization."
+        "title": "A data & digital architecture",
+        "text": "A system design, data model, governance framework, platform, standards, digital services and monitoring."
       },
       {
-        "title": "Culture Evolution",
-        "text": "Shifting mindsets and behaviors to support new ways of working."
+        "title": "A change & capability plan",
+        "text": "The people, skills and institutional change required to sustain implementation."
       },
       {
-        "title": "Continuous Improvement",
-        "text": "Establishing mechanisms for ongoing refinement and adaptation."
+        "title": "A M&E/L&A",
+        "text": "A monitoring, evaluation and learning framework with decision triggers."
+      },
+      {
+        "title": "A pathway to scale",
+        "text": "A decision framework for scaling, adaptation or stopping, informed by evidence."
       }
     ]
   }

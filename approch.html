@@ -130,8 +130,9 @@
     <!-- ============================================ -->
     <!-- SECTION 1: Policy to Implementation (WITH BG) -->
     <!-- ============================================ -->
-    <section class="relative pt-36 pb-28 px-6 min-h-screen flex items-center" id="section1"
-             x-data="section1Data()" x-init="init()">
+    <section class="relative pt-36 pb-28 px-6 min-h-screen flex items-center transition-colors duration-500" 
+             :class="(!data.backgroundVideo && !data.backgroundImage) ? 'bg-white' : ''" 
+             id="section1" x-data="section1Data()" x-init="init()">
 
         <!-- Background Video -->
         <template x-if="data.backgroundVideo">
@@ -147,28 +148,39 @@
         </template>
 
         <!-- Dark Overlay -->
-        <div class="parallax-overlay absolute inset-0"></div>
+        <div class="parallax-overlay absolute inset-0 transition-opacity duration-500" 
+             :class="(!data.backgroundVideo && !data.backgroundImage) ? 'opacity-0 pointer-events-none' : 'opacity-100'"></div>
 
         <!-- Content -->
         <div class="relative z-10 max-w-7xl mx-auto w-full">
             <div class="text-center mb-16 fade-in-up">
-                <p class="text-xs font-semibold tracking-[0.3em] uppercase text-rust-300 mb-6 flex items-center justify-center gap-3">
-                    <span class="w-10 h-[1px] bg-rust-400"></span>
+                <p class="text-xs font-semibold tracking-[0.3em] uppercase mb-6 flex items-center justify-center gap-3 transition-colors duration-500" 
+                   :class="(!data.backgroundVideo && !data.backgroundImage) ? 'text-rust-700' : 'text-rust-300'">
+                    <span class="w-10 h-[1px] transition-colors duration-500" :class="(!data.backgroundVideo && !data.backgroundImage) ? 'bg-rust-700' : 'bg-rust-400'"></span>
                     <span x-text="data.subtitle"></span>
-                    <span class="w-10 h-[1px] bg-rust-400"></span>
+                    <span class="w-10 h-[1px] transition-colors duration-500" :class="(!data.backgroundVideo && !data.backgroundImage) ? 'bg-rust-700' : 'bg-rust-400'"></span>
                 </p>
-                <h1 class="font-serif text-5xl md:text-7xl font-medium text-white mb-8 leading-[1.1]" x-text="data.title"></h1>
-                <p class="text-lg text-gray-300 max-w-2xl mx-auto mb-10 leading-relaxed font-normal" x-text="data.paragraph"></p>
+                <h1 class="font-serif text-5xl md:text-7xl font-medium mb-8 leading-[1.1] transition-colors duration-500" 
+                    :class="(!data.backgroundVideo && !data.backgroundImage) ? 'text-charcoal' : 'text-white'" 
+                    x-text="data.title"></h1>
+                <p class="text-lg max-w-2xl mx-auto mb-10 leading-relaxed font-normal transition-colors duration-500" 
+                   :class="(!data.backgroundVideo && !data.backgroundImage) ? 'text-gray-600' : 'text-gray-300'" 
+                   x-text="data.paragraph"></p>
                 <button class="bg-rust-700 text-white px-10 py-4 rounded-full text-sm font-medium hover:bg-rust-800 transition-all shadow-sm hover:shadow-xl hover:shadow-rust-700/30 hover:-translate-y-0.5 tracking-wide" x-text="data.buttonText"></button>
             </div>
             <div class="flex items-center justify-center gap-3 flex-wrap fade-in-up">
                 <template x-for="(card, index) in data.cards" :key="index">
                     <div class="flex items-center gap-3">
-                        <div class="bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl px-8 py-4 text-center min-w-[140px] card-hover cursor-pointer hover:border-rust-400 group">
-                            <span class="text-base md:text-lg font-medium text-white group-hover:text-rust-200 transition-colors" x-text="card.text"></span>
+                        <div class="group rounded-2xl px-8 py-4 text-center min-w-[140px] card-hover cursor-pointer transition-all duration-500" 
+                             :class="(!data.backgroundVideo && !data.backgroundImage) ? 'bg-gray-50 border border-gray-200 hover:border-rust-700 hover:bg-rust-50' : 'bg-white/10 backdrop-blur-md border border-white/20 hover:border-rust-400'">
+                            <span class="text-base md:text-lg font-medium transition-colors duration-500" 
+                                  :class="(!data.backgroundVideo && !data.backgroundImage) ? 'text-charcoal group-hover:text-rust-700' : 'text-white group-hover:text-rust-200'" 
+                                  x-text="card.text"></span>
                         </div>
                         <template x-if="index < data.cards.length - 1">
-                            <svg class="w-8 h-8 text-rust-300/60 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <svg class="w-8 h-8 flex-shrink-0 transition-colors duration-500" 
+                                 :class="(!data.backgroundVideo && !data.backgroundImage) ? 'text-rust-700' : 'text-rust-300/60'" 
+                                 fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
                             </svg>
                         </template>

@@ -8,7 +8,8 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital,wght@0,400;1,400&family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
     <script>
         tailwind.config = {
             theme: {
@@ -18,7 +19,11 @@
                         cream: '#faf8f5',
                         charcoal: '#1a1a1a',
                     },
-                    fontFamily: { serif: ['Playfair Display', 'serif'], sans: ['Inter', 'sans-serif'] },
+                    fontFamily: { 
+                        serif: ['Playfair Display', 'serif'], 
+                        'serif-italic': ['Instrument Serif', 'serif'],
+                        sans: ['Inter', 'sans-serif'] 
+                    },
                 }
             }
         }
@@ -223,7 +228,7 @@
                 <p class="text-xs font-semibold tracking-[0.3em] uppercase text-rust-700 mb-4" x-text="data.eyebrow"></p>
                 <h2 class="font-serif text-4xl md:text-5xl lg:text-6xl font-medium leading-[1.1] mb-6" x-text="data.h2"></h2>
                 <p class="text-lg text-gray-600 leading-relaxed" x-text="data.sub"></p>
-                <p class="text-rust-700 font-serif italic mt-4" x-text="data.tagline"></p>
+                <p class="text-rust-700 font-serif-italic italic mt-4" x-text="data.tagline"></p>
             </div>
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <template x-for="(card, index) in data.cards" :key="index">
@@ -755,7 +760,7 @@
                 <div class="order-2 lg:order-1">
                     <p class="text-xs font-semibold tracking-[0.3em] uppercase text-rust-700 mb-6" x-text="data.eyebrow"></p>
                     <h2 class="font-serif text-4xl md:text-5xl lg:text-6xl font-medium leading-[1.1] mb-4" x-text="data.name"></h2>
-                    <p class="text-rust-700 font-serif text-xl italic mb-8" x-text="data.position"></p>
+                    <p class="text-rust-700 font-serif-italic italic text-xl mb-8" x-text="data.position"></p>
                     <p class="text-lg text-gray-600 leading-relaxed max-w-lg mb-10" x-text="data.bio"></p>
                     <a href="#" class="bg-rust-700 text-white px-8 py-3.5 rounded-full text-sm font-medium hover:bg-rust-800 transition inline-flex items-center gap-2">View profile & selected work <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg></a>
                 </div>
